@@ -37,7 +37,7 @@ $.get("page_magisk_genshin.txt", function(data, status) {
  data1.forEach(function(element)
 {
 var le_data = element.split(";;;");
- tohtml = tohtml + "<div class=\"jumbotron\">\r\n  <h1 class=\"display-4\">" + le_data[0] +"</h1>\r\n  <p class=\"lead\">" + le_data[1] +"</p>\r\n  <hr class=\"my-4\">\r\n \r\n  <p class=\"lead\">\r\n    <a class=\"btn btn-primary btn-lg\" href=\"" + le_data[2] + "\" role=\"button\">Learn more</a>\r\n  </p>\r\n</div>";
+ tohtml = tohtml + "<div class=\"jumbotron\">\r\n  <h3>" + le_data[0] +"</h3>\r\n  <p class=\"lead\">" + le_data[1] +"</p>\r\n  <hr class=\"my-4\">\r\n \r\n  <p class=\"lead\">\r\n    <a class=\"btn btn-primary btn-lg\" href=\"" + le_data[2] + "\" role=\"button\">Download</a>\r\n  </p>\r\n</div>";
 });
 
  document.getElementById('page_content').innerHTML = tohtml;
@@ -76,7 +76,7 @@ body {
     <!-- Begin page content -->
     <main role="main" class="container">
 
-  <h1 class="display-4" style="margin-bottom: 25px;">Genshin Impact Magisk Modules</h1>
+  <h3 style="margin-bottom: 25px;">Genshin Impact Magisk Modules</h3>
   <pre>Use at your own risk.
 While I personally use these modules myself, I will not responsible for anything that may happens on your phone or your account.</pre>
   
